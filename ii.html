@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <!--Title-->
+    <title>CRUD-JS</title>
+     <!-- CSS File-->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  
+	<CENTER><h2>تۆماری قوتابیان</h2> </CENTER>
+    <!--Table-->
+    <table>
+        <!--Row-1-->
+        <tr>
+            <!--Column-1-->
+            <td>
+                <!--Form-->
+                <form onsubmit="event.preventDefault();onFormSubmit();" autocomplete="off">
+                	<h3>فۆڕمی قوتابی</h3>
+                  <!--div-1-->
+                    <div>
+                        <label>ناوی سیانی</label>
+                        <!--Validation Error-->
+                        <label class="validation-error hide" id="userNamevalidationError">پرنەکراوەتەوە</label>
+                        <!--Input User Name-->
+                        <input type="text" name="userName" id="userName" placeholder="ناویخوێندکار">
+                    </div>
+                    <!--div-2-->
+                    <div>
+                        <label>گروپی خوێن</label>
+                        <!--Validation Error-->
+                        <label class="validation-error hide" id="rollNovalidationError" >پرنەکراوەتەوە</label>
+                        <!--Input Roll No-->
+                        <input type="text" name="rollNo" id="rollNo" placeholder="گروپی خوێن بنوسە">
+                    </div>
+                    <!--div-3-->
+                    <div>
+                        <label>پۆلی قوتابی</label>
+                        <!--Validation Error-->
+                        <label class="validation-error hide" id="stdClassvalidationError">پرنەکراوەتەوە</label>
+                       <!--Input Student Class-->
+                        <input type="text" name="stdClass" id="stdClass" placeholder="پۆلی قوتابی دیاریبکە">
+                    </div>
+                    <!--div-4-->
+                    <div>
+                        <label>کۆی بابەتەکان</label>
+                        <!--Validation Error-->
+                        <label class="validation-error hide" id="tsubvalidationError">پرنەکراوەتەوە</label>
+                        <!--Input Total Subject-->
+                        <input type="number" name="tsub" id="tsub" placeholder="ژمارەی بابەتەکان دیاریبکە">
+                    </div>
+                    <!--div-5-->
+                    <div>
+                        <label>تەمەن</label>
+                        <!--Validation Error-->
+                        <label class="validation-error hide" id="agevalidationError"> پرنەکراوەتەوە </label>
+                        <!--Input Age-->
+                        <input type="number" name="age" id="age" placeholder="تەمەنی قوتابی دیاریبکە">
+                    </div>
+                    <!--div-6-->
+                    <div class="form-action-buttons">
+                        <!--Input Button-->
+                        <input type="submit" value="تۆمارکردن">
+                    </div>
+                </form>
+            </td>
+            <!--Column-2-->
+            <td>
+                <!--Nested Table-->
+                <table class="list" id="stdlist" style="background-color: #C2976D;">
+                    <!--Table Head-->
+                    <thead>
+                        <!--Row-2-->
+                        <tr>
+                            <th>ناوی سیانی</th>
+                            <th> گروپی خوێن</th>
+                            <th>پۆلی</th>
+                            <th>کۆی بابەتەکان</th>
+                            <th>تەمەن</th>
+                            <th>گۆڕانکاری</th>
+                        </tr>
+                    </thead>
+                    <!--Table Body-->
+                    <tbody>
+                    </tbody>
+                </table>
+            </td>
+        </tr>
+    </table>
+    <!-- JS File-->
+    <script src="JS/script.js"></script>
+</body>
+</html>
